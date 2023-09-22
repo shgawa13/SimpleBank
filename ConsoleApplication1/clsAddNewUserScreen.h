@@ -118,6 +118,14 @@ private:
     {
       Permissions += clsUser::enPermissions::pViewLog;
     }
+
+    cout << " View Currency Exchange Menu (y/n): ";
+    cin >> Answer;
+      if (towlower(Answer) == 'y')
+      {
+        Permissions += clsUser::pCurrencyExchange;
+      }
+
     return Permissions;
   }
 
